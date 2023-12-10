@@ -12,7 +12,7 @@ class PortfolioPage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Experiêncioa'),
+          Text('Portifoplio'),
         ],
       ),
     );

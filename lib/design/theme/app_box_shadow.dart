@@ -5,7 +5,7 @@ class AppBoxShadow {
   static get empty => <BoxShadow>[];
   static get headerBoxShadow => [
         BoxShadow(
-          color: AppColors.blackLightColor.withOpacity(0.10),
+          color: AppColors.darkBlue1.withOpacity(0.10),
           offset: const Offset(0, 0),
           blurRadius: 40,
           spreadRadius: 0,

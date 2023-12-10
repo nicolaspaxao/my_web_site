@@ -10,10 +10,6 @@ abstract class AppPages {
         page: () => const HomePage(),
         transition: Transition.noTransition),
     GetPage(
-        name: Routes.ABOUT,
-        page: () => const AboutPage(),
-        transition: Transition.noTransition),
-    GetPage(
         name: Routes.EXPERIENCE,
         page: () => const ExperiencePage(),
         transition: Transition.noTransition),

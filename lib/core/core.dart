@@ -11,6 +11,8 @@ export './cache/storage_service.dart';
 
 export './di/di.dart';
 
-export './extensions/icon_data_extensions.dart';
+export './extensions/locale_extensions.dart';
+export 'extensions/int_extensions.dart';
+export './extensions/widget_extensions.dart';
 
 export './utils/functions.dart';

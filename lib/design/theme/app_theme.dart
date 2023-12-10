@@ -1,16 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_web_site/design/design.dart';
 
 class AppTheme {
   static lightTheme() {
     return _baseTheme.copyWith(
       scaffoldBackgroundColor: Colors.white,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
       brightness: Brightness.light,
       textTheme: _textTheme(Colors.black),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-            surfaceTintColor: Colors.black,
-            textStyle: _baseTheme.textTheme.titleSmall!),
+          surfaceTintColor: Colors.black,
+          textStyle: _baseTheme.textTheme.titleSmall!,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          side: const BorderSide(width: 2, color: AppColors.darkBlue3),
+          foregroundColor: AppColors.darkBlue3,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.darkBlue3,
+          foregroundColor: AppColors.whiteColor,
+          surfaceTintColor: AppColors.whiteColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
       ),
     );
   }
@@ -18,13 +43,36 @@ class AppTheme {
   static darkTheme() {
     return _baseTheme.copyWith(
       scaffoldBackgroundColor: Colors.black87,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
       brightness: Brightness.dark,
       textTheme: _textTheme(Colors.white),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-            surfaceTintColor: Colors.white,
-            textStyle:
-                _baseTheme.textTheme.titleSmall!.copyWith(color: Colors.white)),
+          surfaceTintColor: Colors.white,
+          textStyle: _baseTheme.textTheme.titleSmall!.copyWith(
+            color: Colors.white,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.lightBlue7,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          side: const BorderSide(width: 2, color: AppColors.whiteColor),
+          foregroundColor: AppColors.whiteColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
       ),
     );
   }

@@ -12,9 +12,11 @@ abstract class AppTranslation {
 
 abstract class AppTexts {
   static const String WELCOME = 'WELCOME';
+  static const String ABOUT_ME = 'ABOUT_ME';
+  static const String MY_CURRICULUM = 'MY_CURRICULUM';
   static const String HOME = 'HOME';
   static const String ABOUT = 'ABOUT';
   static const String EXPERIENCE = 'EXPERIENCE';
   static const String PORTFOLIO = 'PORTFOLIO';
-  static const String CONTATO = 'CONTATO';
+  static const String CONTACT = 'CONTATO';
 }
