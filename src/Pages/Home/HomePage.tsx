@@ -1,14 +1,13 @@
 import { Fragment } from 'react';
 
 import { Introducao } from './Partials/Introducao/Introducao';
-import { SocialMedia } from './Partials/SocialMedia/SocialMedia';
+import { Carrer } from './Partials/Carrer/Carrer';
 
 export const HomePage = () => {
 	return (
 		<Fragment>
-			<SocialMedia />
 			<Introducao />
-
+			<Carrer />
 		</Fragment>
 	)
 }

@@ -8,7 +8,7 @@ import WhatsApp from '../../../../Assets/whatsapp.svg?react';
 export const SocialMedia = () => {
 
 	return (
-		<aside className={styles.socialMedia}>
+		<aside className={`${styles.socialMedia} animeLeft `}>
 			<ul className={styles.socialMedias}>
 				<li className={styles.linkedin}>
 					<a href="https://www.linkedin.com/in/nicolas-pax%C3%A3o-b53764178/" target='_blank' >

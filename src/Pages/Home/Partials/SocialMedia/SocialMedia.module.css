@@ -1,7 +1,6 @@
 .socialMedia {
   position: fixed;
   width: 3.5rem;
-
   left: 10px;
   top: 40vh;
   text-align: center;
@@ -55,6 +54,7 @@
   opacity: 0;
   transform: translateX(-10px) translateY(10px);
   animation: animeTopTip 0.2s forwards;
+  z-index: 10;
 }
 
 @keyframes animeTopTip {
@@ -75,4 +75,18 @@
 }
 .whatsapp:hover::after {
   content: "WhatsApp" !important;
+}
+
+@media (max-width: 1120px) {
+  .socialMedia {
+    position: initial;
+  }
+
+  .socialMedias {
+    margin-top: 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
