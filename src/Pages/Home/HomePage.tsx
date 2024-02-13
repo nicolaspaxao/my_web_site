@@ -1,7 +1,14 @@
-import styles from './HomePage.module.css';
+import { Fragment } from 'react';
+
+import { Introducao } from './Partials/Introducao/Introducao';
+import { SocialMedia } from './Partials/SocialMedia/SocialMedia';
 
 export const HomePage = () => {
-    return (
-        <h1 className={styles.title}>HomePage</h1>
-    )
+	return (
+		<Fragment>
+			<SocialMedia />
+			<Introducao />
+
+		</Fragment>
+	)
 }

@@ -1,0 +1,43 @@
+@import url("../../../../App.css");
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.title {
+  font-size: 4rem;
+  word-break: break-all;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.4s forwards;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  word-break: break-all;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.8s forwards;
+  margin-bottom: 2rem;
+}
+
+.downloadBtn {
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 1.2s forwards;
+  background-color: #333333;
+  border-radius: 0.525rem;
+  padding: 1rem 1.2rem;
+  color: #ebebeb;
+  font-size: 1.125rem;
+}

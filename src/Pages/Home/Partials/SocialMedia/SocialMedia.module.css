@@ -1,0 +1,78 @@
+.socialMedia {
+  position: fixed;
+  width: 3.5rem;
+
+  left: 10px;
+  top: 40vh;
+  text-align: center;
+}
+
+.socialMedias {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.socialMedias li {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.socialMedias li svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+
+.socialMedias li:last-child svg path {
+  width: 40px;
+  height: 40px;
+  fill: none;
+  stroke: white;
+  stroke-width: 1;
+}
+
+.socialMedias li:hover::after {
+  content: "";
+  position: absolute;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -20px;
+  right: -60px;
+  background: #eee;
+  padding: 0 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateX(-10px) translateY(10px);
+  animation: animeTopTip 0.2s forwards;
+}
+
+@keyframes animeTopTip {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+.email:hover::after {
+  content: "E-mail" !important;
+}
+.github:hover::after {
+  content: "GitHub" !important;
+}
+.linkedin:hover::after {
+  content: "Linked In" !important;
+}
+.whatsapp:hover::after {
+  content: "WhatsApp" !important;
+}
