@@ -2,12 +2,12 @@
 
 .introduction {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 100vw;
   min-height: 80vh;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
 }
 
 .downloadBtn {

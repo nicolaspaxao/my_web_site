@@ -1,0 +1,75 @@
+.tecnologies {
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.subTitle {
+  margin-bottom: 20px;
+}
+
+.tecStack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.tecStack h3 {
+  font-size: 1.2rem;
+}
+
+.content {
+  margin-bottom: 1rem;
+  margin-left: 1.3rem;
+  font-size: 1rem;
+}
+.content p {
+  display: block;
+}
+
+.tecStackItems {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1.2rem;
+  margin-top: 0.2rem;
+  overflow-y: auto;
+  padding: 1rem 0.5rem;
+  clip: none;
+}
+
+.tecStackItem svg {
+  width: 70px;
+  height: 70px;
+}
+
+.tecStackItem svg path {
+  fill: #333;
+}
+
+.tecStackItem {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 0.4rem 0.2rem;
+}
+
+.tecStackItem p {
+  margin: 0px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}

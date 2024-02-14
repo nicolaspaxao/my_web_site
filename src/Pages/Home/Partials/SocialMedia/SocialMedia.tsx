@@ -1,4 +1,3 @@
-
 import styles from './SocialMedia.module.css';
 import LinkedIn from '../../../../Assets/linkedin.svg?react';
 import Github from '../../../../Assets/github.svg?react';
@@ -8,7 +7,7 @@ import WhatsApp from '../../../../Assets/whatsapp.svg?react';
 export const SocialMedia = () => {
 
 	return (
-		<aside className={`${styles.socialMedia} animeLeft `}>
+		<aside className={`${styles.socialMedia} animeLeft`}>
 			<ul className={styles.socialMedias}>
 				<li className={styles.linkedin}>
 					<a href="https://www.linkedin.com/in/nicolas-pax%C3%A3o-b53764178/" target='_blank' >
@@ -21,12 +20,12 @@ export const SocialMedia = () => {
 					</a>
 				</li>
 				<li className={styles.whatsapp}>
-					<a href="" target='_blank'>
+					<a href="https://w.app/NicolasPaxao" target='_blank'>
 						<WhatsApp />
 					</a>
 				</li>
 				<li className={styles.email}>
-					<a href="" target='_blank'>
+					<a href="mailto:nicolaspaxao@gmail.com" target='_blank'>
 						<Email />
 					</a>
 				</li>

@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/my_web_site" element={<HomePage />} />
           </Routes>
         </main>
       </BrowserRouter>
